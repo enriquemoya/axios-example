@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= "Example"
+  br
+  h3="Name"
+  input(type="text" placeholder="name" id="name")
+  br
+  br
+  h3="Last Name"
+  input(type="text" placeholder="lastname" id="lastname")
+  br
+  br
+  button(type="button" id="button" onclick="handleClick()")="submit"
+
+  br
+  br
+  table
+    thead
+      tr
+        th="Name"
+        th="Last Name"
+    tbody#table
+
